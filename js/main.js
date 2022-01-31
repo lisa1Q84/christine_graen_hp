@@ -13,3 +13,10 @@ nav.classList.toggle('nav-menu-active');
 burger.addEventListener('click', function() {
 toggleNav();
 });
+
+
+
+window.onscroll = () => {
+  const div = document.querySelector('#navbarbg');
+  if(this.scrollY <= 10) div.className= ''; else div.className = 'scroll';
+};
