@@ -120,7 +120,6 @@ div.scroll {
 .background-div {
   /*background-image: linear-gradient(130deg,#f3f3f3 0%,#F8F8F8 100%)!important; */
   background-color: blue;
-  padding-left: 10%;
   padding-top: 5%;
 }
 
@@ -132,6 +131,7 @@ div.scroll {
   background-color: white;
   padding: 60px;
   border-radius: 30px 0 0 0;
+  margin-left: 10%;
 
 }
 
@@ -171,6 +171,93 @@ div.scroll {
   }
 }
 }
+
+
+/* Mini-Slider Section ( slider taken from this library https://cdnjs.com/libraries/tiny-slider) 
+and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oaKOQ */
+
+
+#slider {
+  height:  500px;
+  border:  1px solid black;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider-h {
+  text-align: center;
+}
+
+ 
+.slider-container {
+  width:  100%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+ }
+
+ .subcontainer{
+  width:  85%;
+  margin:  auto;
+ }
+
+ .slide{
+  text-align: center;
+ }
+
+ .slide-img{
+  width: 100%;
+  height: 275px;
+  border-radius: 5px;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+ }
+
+ .slide-img:hover{
+  box-shadow:  0 0 0 200px rgba(0, 0, 0, 0.9) inset;
+ }
+
+ .slide-img a{
+  opacity: 0;
+  text-decoration: none;
+  transform: scale(0);
+  transition: 0.8s;
+  font-size: 1.5rem;
+  color: white;
+ }
+
+ .slide-img:hover a{
+  opacity: 1;
+  transform: scale(1);
+ }
+
+.img-1{
+  background-image: url("../images/feuerbitte.jpg");
+}
+
+.img-2{
+  background-image: url("../images/glueck-salzburg.jpeg");
+}
+
+.img-3{
+  background-image: url("../images/glueck-steiermark.jpeg");
+}
+
+.img-4{
+  background-image: url("../images/glueck-wien.jpeg");
+}
+
+.img-5{
+  background-image: url("../images/hochstaplerin.jpeg");
+}
+
 
 
 /* Simple Responsive Framework. */
@@ -221,6 +308,8 @@ div.scroll {
   .col-lg-12 {
     width: 100%;
   }
+
+
 }
 
 /********** Medium devices only **********/
@@ -316,6 +405,8 @@ div.scroll {
   }
 
 }
+
+
 
 
 
