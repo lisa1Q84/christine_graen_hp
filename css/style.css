@@ -24,6 +24,12 @@ p{
   font-weight: 300;
 }
 
+.f-left{
+  float:  left;
+}
+
+
+
 
 .sub-h{
   text-align: center;
@@ -61,6 +67,10 @@ div.scroll {
   display: flex;
   flex-direction: row;
   list-style: none;
+}
+
+.menu-bg{
+  background-color: black;
 }
 
 
@@ -322,6 +332,18 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   margin-left: 1em;
   margin-right: 1em;
 }
+
+
+
+
+.bulletpoints li{
+  display: list-item;
+}
+
+.pad{
+  padding:  50px;
+}
+
 
 
 
