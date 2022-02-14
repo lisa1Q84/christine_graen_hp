@@ -15,8 +15,6 @@ body {
 h1,h2,h3,h4 {
   font-family: 'Fjalla One', sans-serif;
   font-weight: 200;
-  font-size: 3.5vw;
-  line-height: 1.1em;
 }
 
 p{
@@ -26,6 +24,10 @@ p{
   font-weight: 300;
 }
 
+
+.sub-h{
+  text-align: center;
+}
 
 /* Navbar */
 
@@ -101,7 +103,7 @@ div.scroll {
 #hero-overlay{
   position: absolute;
   left: 20px;
-  bottom: 10px;
+  bottom: 30px;
   color: white;
   display: flex;
   align-items: center;
@@ -113,13 +115,14 @@ div.scroll {
   width: 80%;
 }
 
+
+
 /* Background div */
 
 
 
 .background-div {
-  /*background-image: linear-gradient(130deg,#f3f3f3 0%,#F8F8F8 100%)!important; */
-  background-color: blue;
+  background-image: linear-gradient(130deg,#f3f3f3 0%,#F8F8F8 100%)!important; 
   padding-top: 5%;
 }
 
@@ -128,6 +131,7 @@ div.scroll {
 
 #about-div {
   display:  flex;
+  flex-wrap: wrap;
   background-color: white;
   padding: 60px;
   border-radius: 30px 0 0 0;
@@ -135,9 +139,20 @@ div.scroll {
 
 }
 
+#about-div > * {
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 400px;
+}
+
 .author-img {
-  max-width: 60%;
+  max-width: 90%;
   height: auto;
+  padding: 1em 2em;
+}
+
+.author-text{
+  padding: 1em 2em;
 }
 
 /* Button design by Michael McMillan found on https://getcssscan.com/css-buttons-examples */
@@ -192,7 +207,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
  
 .slider-container {
   width:  100%;
-  margin-top: 5%;
+  margin-top: 10%;
   margin-bottom: 5%;
  }
 
@@ -212,7 +227,6 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  background-color: white;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -257,6 +271,60 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 .img-5{
   background-image: url("../images/hochstaplerin.jpeg");
 }
+
+.book-btn{
+  text-align: center;
+}
+
+
+/* Quote Div */
+
+
+#quote{
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px 0 0 0;
+  margin: 10%;
+}
+
+.q-icon{
+  height: 3em;
+  width: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Footer */
+
+
+
+#footer-container{
+  background-color: #5f1c36;
+  color:  white;
+  text-align: center;
+}
+
+.footer-social li{
+  list-style: none;
+  display: inline;
+  padding-right: 2em;
+  font-size: 1.2em;
+}
+
+.footer-name, .footer-social{
+  text-align: center;
+}
+
+.footer-copyright{
+  font-size: 1.2em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+
+
 
 
 
@@ -400,9 +468,18 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   left: 15%;
   }
 
+  .hero-text{
+  font-size: 11px;
+  }
+
+
   #about-div {
     padding:  10px;
   }
+
+.q-icon{
+  max-height: 10%;
+
 
 }
 
