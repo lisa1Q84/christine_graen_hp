@@ -28,11 +28,17 @@ p{
   float:  left;
 }
 
-
+.h-center{
+  text-align: center;
+}
 
 
 .sub-h{
   text-align: center;
+}
+
+.bg-red{
+  background-color: red;
 }
 
 /* Navbar */
@@ -334,15 +340,26 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 }
 
 
+/* About the author page */
 
 
-.bulletpoints li{
-  display: list-item;
+#bib-div{
+  margin:  1rem;
+  }
+
+
+.list-box{
+  padding: 20px;
+  margin: 20px;
+  border: solid black;
 }
 
-.pad{
-  padding:  50px;
+.bg-div{
+  background-color: red;
 }
+
+
+
 
 
 
