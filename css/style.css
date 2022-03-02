@@ -49,6 +49,15 @@ p{
   color: white;
 }
 
+.h-header{
+  background-color: #5f1c36;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 /* Navbar */
@@ -370,33 +379,43 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 }
 
 
-/* Book page */
+/* Books page */
 
 #book-container{
-  margin: 10%;
+  margin: 5%;
 }
 
-.h-header{
-  background-color: #5f1c36;
-  height: 150px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.book-wrapper{
-  text-align: center;
-}
 
 .book-divs{
   display: inline-block;
-  padding: 15px;
+  padding: 10px;
 }
 
 .book-wrapper .book-divs img {
     width: 100%;
 }
+
+
+/* Single Book page */
+
+
+.book-div{
+  display: inline-block;
+  padding: 10px;
+  vertical-align: top;
+}
+
+.quote-parent{
+  display: flex;
+  margin: 5%;
+}
+
+.quote-child{
+  flex: 1;
+  padding: 20px;
+}
+
+
 
 
 
@@ -426,7 +445,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
     width: 41.66%;
   }
   .col-lg-6 {
-    width: 50%;
+    width: calc(50% - 5px);
   }
   .col-lg-7 {
     width: 58.33%;
@@ -470,7 +489,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
     width: 41.66%;
   }
   .col-md-6 {
-    width: 50%;
+    width: calc(50% - 5px);
   }
   .col-md-7 {
     width: 58.33%;
@@ -490,6 +509,17 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   .col-md-12 {
     width: 100%;
   }
+
+
+  .sm-logo {
+      font-family: 'Fjalla One', sans-serif;
+      font-size: 25px;
+      color: white;
+      text-decoration: none;
+  }
+
+
+
 }
 
 
@@ -540,7 +570,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   }
 
   .hero-text{
-  font-size: 11px;
+  font-size: px;
   }
 
 
@@ -548,8 +578,8 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
     padding:  10px;
   }
 
-.q-icon{
-  max-height: 10%;
+  .q-icon{
+    max-height: 10%;
 
 
 }
