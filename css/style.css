@@ -24,6 +24,10 @@ p{
   font-weight: 300;
 }
 
+
+/* General styles */
+
+
 .f-left{
   float:  left;
 }
@@ -38,8 +42,14 @@ p{
 }
 
 .bg-red{
-  background-color: red;
+  background-color: #5f1c36;
 }
+
+.text-white{
+  color: white;
+}
+
+
 
 /* Navbar */
 
@@ -48,6 +58,7 @@ p{
 font-family: 'Fjalla One', sans-serif;
 font-size: 50px;
 color: white;
+text-decoration: none;
 
 }
 
@@ -355,15 +366,37 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 }
 
 .bg-div{
-  background-color: red;
+  background-color: #5f1c36;
 }
 
 
+/* Book page */
 
+#book-container{
+  margin: 10%;
+}
 
+.h-header{
+  background-color: #5f1c36;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.book-wrapper{
+  text-align: center;
+}
 
+.book-divs{
+  display: inline-block;
+  padding: 15px;
+}
 
+.book-wrapper .book-divs img {
+    width: 100%;
+}
 
 
 
@@ -371,8 +404,6 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 .row {
   width: 100%;
 }
-
-
 
 
 /********** Large devices only **********/
@@ -386,7 +417,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
     width: 16.66%;
   }
   .col-lg-3 {
-    width: 25%;
+    width: calc(25% - 33px);
   }
   .col-lg-4 {
     width: 33.33%;
@@ -430,7 +461,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
     width: 16.66%;
   }
   .col-md-3 {
-    width: 25%;
+    width: calc(25% - 33px);
   }
   .col-md-4 {
     width: 33.33%;
@@ -462,7 +493,10 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
 }
 
 
-@media (min-width: 101px) and (max-width: 768px) {
+/********** Small devices only **********/
+
+
+@media screen and (max-width: 768px) {
 
 
   .burger {
@@ -502,9 +536,7 @@ and created by following this tutorial: https://www.youtube.com/watch?v=cmlkB3oa
   }
 
   .sm-logo{
-  font-size: 1.2em;
-  position: fixed;
-  left: 15%;
+  font-size: 25px;
   }
 
   .hero-text{

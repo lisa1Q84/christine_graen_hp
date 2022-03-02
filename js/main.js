@@ -22,6 +22,7 @@ window.onscroll = () => {
   if(this.scrollY <= 10) div.className= ''; else div.className = 'scroll';
 };
 
+
 // Slider 
 
 let slider = tns({
